@@ -14,7 +14,7 @@ spec:
         app: demo-app
     spec:
       containers:
-      - name: demo-app
+      - name: tomcat
         image: nginx
         ports:
-        - containerPort: 80
+        - containerPort: 8080
