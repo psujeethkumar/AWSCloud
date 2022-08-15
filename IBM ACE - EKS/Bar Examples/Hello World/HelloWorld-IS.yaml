@@ -29,4 +29,4 @@ spec:
     timeout: 120s
   service:
     endpointType: http
-  version: '12.0'
+  version: 12.0.3.0-r2
