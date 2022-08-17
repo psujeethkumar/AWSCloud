@@ -6,7 +6,7 @@ metadata:
 spec:
   adminServerSecure: false
   barURL: 
-    https://github.com/psujeethkumar/AWSCloud/raw/master/IBM%20ACE%20-%20EKS/Bar%20Examples/HelloWorld.bar
+    https://github.com/psujeethkumar/AWSCloud/raw/master/IBM%20App%20Connect/Bar%20Examples/LegalEntityRegistry/LegalEntityRegistry.bar
   configurations:
     - github-barauth
   designerFlowsOperationMode: disabled
