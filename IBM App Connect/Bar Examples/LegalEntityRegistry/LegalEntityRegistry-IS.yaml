@@ -1,20 +1,18 @@
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationServer
 metadata:
-  name: http-echo-service
-  namespace: ace-integrations
+  name: legal-entity-registry
+  namespace: ibm-ace
 spec:
   adminServerSecure: false
   barURL: 
-    https://github.com/amarIBM/hello-world/raw/master/HttpEchoApp.bar
+    https://github.com/psujeethkumar/AWSCloud/raw/master/IBM%20App%20Connect/Bar%20Examples/LegalEntityRegistry/LegalEntityRegistry.bar
   configurations:
     - github-barauth
-  createDashboardUsers: true
   designerFlowsOperationMode: disabled
-  enableMetrics: true
   license:
     accept: true
-    license: L-APEH-C79SB3
+    license: L-KSBM-CCBK39
     use: AppConnectEnterpriseNonProduction
   pod:
     containers:
@@ -30,5 +28,5 @@ spec:
   router:
     timeout: 120s
   service:
-    endpointType: http
-  version: '12.0'
+    endpointType: https
+  version: 12.0.3.0-r2
