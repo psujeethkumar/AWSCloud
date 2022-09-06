@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: appconn-ingress
-  namespace: ibm-ace
+  name: ibm-licensing-service-ingress
+  namespace: ibm-common-services
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
@@ -12,15 +12,15 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: appconn.cloudaise.com
+    - host: lic.cloudaise.com
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: appconn-dashboard-dash
+                name: ibm-licensing-service-instance
                 port:
-                  number: 8300
+                  number: 8080
 
                   
