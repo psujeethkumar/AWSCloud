@@ -10,6 +10,7 @@ spec:
   configurations:
     - github-barauth
   designerFlowsOperationMode: disabled
+  enableMetrics : false
   license:
     accept: true
     license: L-KSBM-CCBK39
