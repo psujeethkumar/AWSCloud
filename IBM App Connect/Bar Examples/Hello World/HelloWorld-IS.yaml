@@ -9,8 +9,10 @@ spec:
     https://github.com/psujeethkumar/AWSCloud/raw/master/IBM%20App%20Connect/Bar%20Examples/Hello%20World/HelloWorld.bar
   configurations:
     - github-barauth
-    - mq-connection
+    - demo-qmgr
   designerFlowsOperationMode: disabled
+  createDashboardUsers : true
+  logFormat: json
   license:
     accept: true
     license: L-KSBM-CCBK39
